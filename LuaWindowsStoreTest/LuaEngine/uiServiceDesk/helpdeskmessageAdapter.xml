@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+	android:id="@+id/mainrootlayout" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:lua="http://schemas.android.com/apk/res/com.Resto" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:orientation="horizontal" 
+	android:background="@android:color/transparent">
+	<LGLinearLayout
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="#C5C5C5">
+		<LGTextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			lua:id="helpdeskMessageAdapterTVSender"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:text="Sender:"
+			android:textColor="#555555"
+			android:textSize="16dp"
+			android:background="#DDDDDD">
+		</LGTextView>
+		<LGTextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			lua:id="helpdeskMessageAdapterTVDetail"
+			android:layout_marginLeft="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			android:text="Lorem ipsum zerghanum koyhum Lorem ipsum zerghanum koyhum Lorem ipsum zerghanum koyhum"
+			android:textColor="#818181"
+			android:textSize="14dp"
+			android:background="#EEEEEE">
+		</LGTextView>
+	</LGLinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+C:\Users\Edo\Desktop\MobileFucker\WorkSpace\WP7\LuaWindowsPhone\LuaScriptingEngineWindows\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Edo\Desktop\MobileFucker\WorkSpace\WP7\LuaWindowsPhone\LuaScriptingEngineWindows\obj\Debug\LuaScriptingEngineWindows_MarkupCompile.cache
+C:\Users\Edo\Desktop\MobileFucker\WorkSpace\WP7\LuaWindowsPhone\LuaScriptingEngineWindows\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Edo\Desktop\MobileFucker\WorkSpace\WP7\LuaWindowsPhone\LuaScriptingEngineWindows\obj\Debug\LuaScriptingEngineWindows_MarkupCompile.lref

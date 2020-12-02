@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/mainrootlayout" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lua="http://schemas.android.com/apk/res/com.Resto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#7993AB">
+<LGTextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Title"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGTextView>
+<LGEditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	lua:id="newIncidentETTitle"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGEditText>
+<LGTextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Description"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGTextView>
+<LGEditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	lua:id="newIncidentETDescription"
+	android:minLines="4"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGEditText>
+<LGTextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Category"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGTextView>
+<LGComboBox 
+	lua:id="newIncidentCBCategory" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="2dip"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dip">
+</LGComboBox>
+<LGTextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Priority"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGTextView>
+<LGComboBox 
+	lua:id="newIncidentCBPriority"	
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="2dip"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dip">
+</LGComboBox>
+<LGButton
+	lua:id="newIncidentButCreate"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Create"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGButton>
+</LinearLayout>

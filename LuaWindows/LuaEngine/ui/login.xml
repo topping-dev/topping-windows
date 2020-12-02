@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/mainrootlayout" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lua="http://schemas.android.com/apk/res/com.Resto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#7993AB" lua:id="test">
+<LGImageView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:scaleType="center"
+	android:src="@drawable/merkut">
+</LGImageView>
+<LGTextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="User"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGTextView>
+<LGEditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	lua:id="loginUsername"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGEditText>
+<LGTextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Password"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGTextView>
+<LGEditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	lua:id="loginPassword"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGEditText>
+<LGButton
+	lua:id="loginLoginButton"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Login"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp">
+</LGButton>
+</LinearLayout>

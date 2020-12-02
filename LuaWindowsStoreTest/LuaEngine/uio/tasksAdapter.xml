@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+	android:id="@+id/mainrootlayout" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:lua="http://schemas.android.com/apk/res/com.Resto" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:orientation="horizontal" 
+	android:background="@android:color/transparent">
+	<LGLinearLayout
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_weight="0.3"
+		android:orientation="vertical"
+		android:background="#C5C5C5">
+		<LGTextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			lua:id="tasksAdapterTVDetail"
+			android:layout_marginLeft="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginRight="2dp"
+			android:text="Lorem ipsum dolores koyhum Lorem ipsum dolores koyhum Lorem ipsum zerghanum koyhum"
+			android:textColor="#818181"
+			android:textSize="14dp"
+			android:background="#EEEEEE">
+		</LGTextView>
+	</LGLinearLayout>
+</LinearLayout>

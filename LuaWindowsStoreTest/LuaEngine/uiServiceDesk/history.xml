@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/mainrootlayout" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lua="http://schemas.android.com/apk/res/com.Resto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#7993AB">
+<LGListView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	lua:id="historyList"
+	android:layout_weight="0.70"
+	android:layout_margin="1dp"
+	android:divider="@android:color/transparent"
+	android:background="#4C4C4C4C"
+>
+</LGListView>
+<LGLinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="0.30"
+	android:orientation="vertical">
+	<LGTextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Message"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="2dp"
+		android:layout_marginRight="2dp">
+	</LGTextView>
+	<LGEditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		lua:id="historyETMessage"
+		android:minLines="4"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="2dp"
+		android:layout_marginRight="2dp">
+	</LGEditText>
+	<LGButton
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		lua:id="historyButSend"
+		android:text="Send"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="2dp"
+		android:layout_marginRight="2dp"
+		android:layout_marginBottom="2dp">
+	</LGButton>
+</LGLinearLayout>
+</LinearLayout>

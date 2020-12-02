@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5135A5D5-F64A-4D93-927C-2012BF0CB605}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LuaScriptingEngineWindows</RootNamespace>
+    <AssemblyName>LuaScriptingEngineWindows</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LUA_CORE;_WIN32;LUA_COMPAT_VARARG;LUA_COMPAT_MOD;LUA_COMPAT_GFIND;CATCH_EXCEPTIONS;NO_TCL;SQLITE_ASCII;SQLITE_DISABLE_LFS;SQLITE_MEM_POOL;SQLITE_MUTEX_OMIT;SQLITE_OMIT_AUTHORIZATION;SQLITE_OMIT_DEPRECATED;SQLITE_OMIT_GET_TABLE;SQLITE_OMIT_INCRBLOB;SQLITE_OMIT_LOOKASIDE;SQLITE_OMIT_SHARED_CACHE;SQLITE_OMIT_UTF16;SQLITE_OMIT_VIRTUALTABLE;SQLITE_OS_WIN;SQLITE_SYSTEM_MALLOC;VDBE_PROFILE_OFF;SQLITE_SILVERLIGHT;TRUE;_MSC_VER;NDEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\LuaScriptingEngine\ALogger.cs">
+      <Link>ALogger.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\CLogger.cs">
+      <Link>CLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Collections\LongListGroup.cs">
+      <Link>Collections\LongListGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SQLiteClient.cs">
+      <Link>Community.CsharpSqlite.WP\SQLiteClient.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\alter_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\alter_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\analyze_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\analyze_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\attach_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\attach_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\auth_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\auth_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\backup_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\backup_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\bitvec_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\bitvec_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\btmutex_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\btmutex_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\BtreeInt_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\BtreeInt_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\btree_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\btree_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\Btree_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\Btree_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\build_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\build_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\callback_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\callback_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\complete_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\complete_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\ctime_cs.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\ctime_cs.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\date_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\date_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\Delagates.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\Delagates.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\delete_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\delete_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\expr_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\expr_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\fault_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\fault_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\fkey_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\fkey_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\func_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\func_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\global_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\global_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\hash_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\hash_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\Hash_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\Hash_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\hwtime_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\hwtime_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\insert_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\insert_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\journal_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\journal_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\keywordhash_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\keywordhash_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\legacy_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\legacy_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\loadext_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\loadext_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\main_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\main_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\malloc_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\malloc_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\memjournal_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\memjournal_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\mem_Pool.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\mem_Pool.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\mutex_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\mutex_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\mutex_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\mutex_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\mutex_noop_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\mutex_noop_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\mutex_w32.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\mutex_w32.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\notify_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\notify_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\opcodes_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\opcodes_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\opcodes_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\opcodes_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\os_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\os_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\os_common_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\os_common_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\os_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\os_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\os_win_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\os_win_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\pager_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\pager_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\pager_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\pager_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\parse_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\parse_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\parse_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\parse_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\pcache1_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\pcache1_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\pcache_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\pcache_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\pcache_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\pcache_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\pragma_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\pragma_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\prepare_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\prepare_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\printf_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\printf_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\random_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\random_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\resolve_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\resolve_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\rowset_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\rowset_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\select_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\select_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\sqlite3ext_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\sqlite3ext_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\sqlite3_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\sqlite3_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\sqliteicu_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\sqliteicu_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\sqliteInt_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\sqliteInt_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\sqliteLimit_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\sqliteLimit_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\status_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\status_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\table_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\table_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\tokenize_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\tokenize_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\trigger_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\trigger_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\update_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\update_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\utf_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\utf_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\util_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\util_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vacuum_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vacuum_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vdbeapi_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vdbeapi_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vdbeaux_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vdbeaux_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vdbeblob_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vdbeblob_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\VdbeInt_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\VdbeInt_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vdbemem_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vdbemem_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vdbetrace_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vdbetrace_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vdbe_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vdbe_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\Vdbe_h.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\Vdbe_h.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\vtab_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\vtab_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\walker_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\walker_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\where_c.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\where_c.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Community.CsharpSqlite.WP\SqliteWrapper\_Custom.cs">
+      <Link>Community.CsharpSqlite.WP\SqliteWrapper\_Custom.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\CustomControls\BaseView.cs">
+      <Link>CustomControls\BaseView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\CustomControls\DataTemplateSelector.cs">
+      <Link>CustomControls\DataTemplateSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\CustomControls\EditableComboBox.cs">
+      <Link>CustomControls\EditableComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\CustomControls\FormPivotItem.cs">
+      <Link>CustomControls\FormPivotItem.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\CustomControls\FrameworkElementExtension.cs">
+      <Link>CustomControls\FrameworkElementExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\CustomControls\LinearLayout.cs">
+      <Link>CustomControls\LinearLayout.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\DatabaseHelper.cs">
+      <Link>DatabaseHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Defines.cs">
+      <Link>Defines.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Log.cs">
+      <Link>Log.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Logger.cs">
+      <Link>Logger.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\BlockingSocket.cs">
+      <Link>LuaCSharp\BlockingSocket.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\CSSocket.cs">
+      <Link>LuaCSharp\CSSocket.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\pBuffer.cs">
+      <Link>LuaCSharp\pBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\pIO.cs">
+      <Link>LuaCSharp\pIO.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\pOpt.cs">
+      <Link>LuaCSharp\pOpt.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\pSocket.cs">
+      <Link>LuaCSharp\pSocket.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\pTcp.cs">
+      <Link>LuaCSharp\pTcp.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\pTimeout.cs">
+      <Link>LuaCSharp\pTimeout.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaCSharp\Tools.cs">
+      <Link>LuaCSharp\Tools.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGAdapterView.cs">
+      <Link>LuaUI\LGAdapterView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGButton.cs">
+      <Link>LuaUI\LGButton.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGCheckBox.cs">
+      <Link>LuaUI\LGCheckBox.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGComboBox.cs">
+      <Link>LuaUI\LGComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGDatePicker.cs">
+      <Link>LuaUI\LGDatePicker.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGEditText.cs">
+      <Link>LuaUI\LGEditText.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGHorizontalScrollView.cs">
+      <Link>LuaUI\LGHorizontalScrollView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGImageView.cs">
+      <Link>LuaUI\LGImageView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGLinearLayout.cs">
+      <Link>LuaUI\LGLinearLayout.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGListView.cs">
+      <Link>LuaUI\LGListView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGProgressBar.cs">
+      <Link>LuaUI\LGProgressBar.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGRadioButton.cs">
+      <Link>LuaUI\LGRadioButton.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGRadioGroup.cs">
+      <Link>LuaUI\LGRadioGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGScrollView.cs">
+      <Link>LuaUI\LGScrollView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGTextView.cs">
+      <Link>LuaUI\LGTextView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\LuaUI\LGView.cs">
+      <Link>LuaUI\LGView.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lapi.cs">
+      <Link>Lua\lapi.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lauxlib.cs">
+      <Link>Lua\lauxlib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lbaselib.cs">
+      <Link>Lua\lbaselib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lcode.cs">
+      <Link>Lua\lcode.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\ldblib.cs">
+      <Link>Lua\ldblib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\ldebug.cs">
+      <Link>Lua\ldebug.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\ldo.cs">
+      <Link>Lua\ldo.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\ldump.cs">
+      <Link>Lua\ldump.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lfunc.cs">
+      <Link>Lua\lfunc.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lgc.cs">
+      <Link>Lua\lgc.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\linit.cs">
+      <Link>Lua\linit.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\liolib.cs">
+      <Link>Lua\liolib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\llex.cs">
+      <Link>Lua\llex.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\llimits.cs">
+      <Link>Lua\llimits.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lmathlib.cs">
+      <Link>Lua\lmathlib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lmem.cs">
+      <Link>Lua\lmem.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\loadlib.cs">
+      <Link>Lua\loadlib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lobject.cs">
+      <Link>Lua\lobject.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lopcodes.cs">
+      <Link>Lua\lopcodes.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\loslib.cs">
+      <Link>Lua\loslib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lparser.cs">
+      <Link>Lua\lparser.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lsocket.cs">
+      <Link>Lua\lsocket.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lstate.cs">
+      <Link>Lua\lstate.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lstring.cs">
+      <Link>Lua\lstring.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lstrlib.cs">
+      <Link>Lua\lstrlib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\ltable.cs">
+      <Link>Lua\ltable.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\ltablib.cs">
+      <Link>Lua\ltablib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\ltm.cs">
+      <Link>Lua\ltm.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lua.cs">
+      <Link>Lua\lua.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\luaconf.cs">
+      <Link>Lua\luaconf.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lualib.cs">
+      <Link>Lua\lualib.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lundump.cs">
+      <Link>Lua\lundump.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lvm.cs">
+      <Link>Lua\lvm.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\lzio.cs">
+      <Link>Lua\lzio.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\print.cs">
+      <Link>Lua\print.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Lua\Tools.cs">
+      <Link>Lua\Tools.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\MersenneTwister.cs">
+      <Link>MersenneTwister.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\PostSubmitter.cs">
+      <Link>PostSubmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ResourceHelper.cs">
+      <Link>ResourceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaClass.cs">
+      <Link>ScriptingEngine\Backend\LuaClass.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaFunction.cs">
+      <Link>ScriptingEngine\Backend\LuaFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaGlobalFunction.cs">
+      <Link>ScriptingEngine\Backend\LuaGlobalFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaGlobalInt.cs">
+      <Link>ScriptingEngine\Backend\LuaGlobalInt.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaGlobalManual.cs">
+      <Link>ScriptingEngine\Backend\LuaGlobalManual.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaGlobalNumber.cs">
+      <Link>ScriptingEngine\Backend\LuaGlobalNumber.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaGlobalString.cs">
+      <Link>ScriptingEngine\Backend\LuaGlobalString.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaInterface.cs">
+      <Link>ScriptingEngine\Backend\LuaInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaLogStream.cs">
+      <Link>ScriptingEngine\Backend\LuaLogStream.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaObject.cs">
+      <Link>ScriptingEngine\Backend\LuaObject.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\LuaTranslator.cs">
+      <Link>ScriptingEngine\Backend\LuaTranslator.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\Backend\Lunar.cs">
+      <Link>ScriptingEngine\Backend\Lunar.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaBuffer.cs">
+      <Link>ScriptingEngine\LuaBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaDatabase.cs">
+      <Link>ScriptingEngine\LuaDatabase.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaDate.cs">
+      <Link>ScriptingEngine\LuaDate.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaDefines.cs">
+      <Link>ScriptingEngine\LuaDefines.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaEngine.cs">
+      <Link>ScriptingEngine\LuaEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaHttpClient.cs">
+      <Link>ScriptingEngine\LuaHttpClient.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaJSON.cs">
+      <Link>ScriptingEngine\LuaJSON.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaMessageBox.cs">
+      <Link>ScriptingEngine\LuaMessageBox.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaNativeObject.cs">
+      <Link>ScriptingEngine\LuaNativeObject.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaObjectStore.cs">
+      <Link>ScriptingEngine\LuaObjectStore.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaResource.cs">
+      <Link>ScriptingEngine\LuaResource.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaStore.cs">
+      <Link>ScriptingEngine\LuaStore.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaStream.cs">
+      <Link>ScriptingEngine\LuaStream.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaTabForm.cs">
+      <Link>ScriptingEngine\LuaTabForm.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaToast.cs">
+      <Link>ScriptingEngine\LuaToast.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaUI\DisplayMetrics.cs">
+      <Link>ScriptingEngine\LuaUI\DisplayMetrics.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaUI\LGColorParser.cs">
+      <Link>ScriptingEngine\LuaUI\LGColorParser.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaUI\LGDimensionParser.cs">
+      <Link>ScriptingEngine\LuaUI\LGDimensionParser.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaUI\LGDrawableParser.cs">
+      <Link>ScriptingEngine\LuaUI\LGDrawableParser.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaUI\LGParser.cs">
+      <Link>ScriptingEngine\LuaUI\LGParser.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaUI\LuaContext.cs">
+      <Link>ScriptingEngine\LuaUI\LuaContext.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\ScriptingEngine\LuaUI\LuaViewInflator.cs">
+      <Link>ScriptingEngine\LuaUI\LuaViewInflator.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Singleton.cs">
+      <Link>Singleton.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\SyncPostSubmitter.cs">
+      <Link>SyncPostSubmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Test\HashSet.cs">
+      <Link>Test\HashSet.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Test\ISet.cs">
+      <Link>Test\ISet.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Test\Tuple.cs">
+      <Link>Test\Tuple.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Test\TypeConverters.cs">
+      <Link>Test\TypeConverters.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Test\UiXamlSerializer.cs">
+      <Link>Test\UiXamlSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Test\XamlSerializer.cs">
+      <Link>Test\XamlSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\LuaScriptingEngine\Theme.cs">
+      <Link>Theme.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScriptingEngine\LuaForm.xaml.cs">
+      <DependentUpon>LuaForm.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="..\LuaScriptingEngine\Themes\Generic.xaml">
+      <Link>Themes\Generic.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="ScriptingEngine\LuaForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\LuaScriptingEngine\CustomControls\Toolkit.Content\ApplicationBar.Cancel.png">
+      <Link>CustomControls\Toolkit.Content\ApplicationBar.Cancel.png</Link>
+    </Content>
+    <Content Include="..\LuaScriptingEngine\CustomControls\Toolkit.Content\ApplicationBar.Check.png">
+      <Link>CustomControls\Toolkit.Content\ApplicationBar.Check.png</Link>
+    </Content>
+    <Content Include="..\LuaScriptingEngine\CustomControls\Toolkit.Content\ApplicationBar.Delete.png">
+      <Link>CustomControls\Toolkit.Content\ApplicationBar.Delete.png</Link>
+    </Content>
+    <Content Include="..\LuaScriptingEngine\CustomControls\Toolkit.Content\ApplicationBar.Select.png">
+      <Link>CustomControls\Toolkit.Content\ApplicationBar.Select.png</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/mainrootlayout" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lua="http://schemas.android.com/apk/res/com.Resto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#2A6897">
+<LGLinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LGButton
+	    lua:id="introButMyProjects"
+		android:layout_width="145dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="0.5"
+		android:text="Projelerim"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="2dp"
+		android:layout_gravity="right"
+		android:background="@drawable/indexbutright"
+		android:textColor="#DDDDDD">
+	</LGButton>
+	<LGButton
+	    lua:id="introButHelpDesk"
+		android:layout_width="145dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="0.5"
+		android:text="Yardım\nMasası\nKayıtlarım"
+		android:layout_marginTop="2dp"
+		android:layout_marginRight="2dp"
+		android:background="@drawable/indexbutleft"
+		android:textColor="#DDDDDD">
+	</LGButton>
+</LGLinearLayout>
+</LinearLayout>

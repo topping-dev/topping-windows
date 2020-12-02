@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+	android:id="@+id/mainrootlayout" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:lua="http://schemas.android.com/apk/res/com.Resto" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:background="@android:color/transparent">
+<LGLinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+	<LGTextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		lua:id="incidentsAdapterTVTitle"
+		android:layout_weight="0.15"
+		android:layout_marginLeft="2dp"
+		android:layout_gravity="center_vertical"
+		android:text="a"
+		android:textSize="14dp"
+		android:textColor="#DDDDDD">
+	</LGTextView>
+	<LGButton
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		lua:id="incidentsAdapterButType"
+		android:layout_weight="0.85"
+		android:layout_marginLeft="2dp"
+		android:layout_marginRight="2dp"
+		android:layout_marginTop="2dp"
+		android:layout_marginBottom="2dp"
+		android:background="@drawable/redback"
+		android:text="A"
+		android:textColor="#DDDDDD">
+	</LGButton>
+</LGLinearLayout>
+</LinearLayout>

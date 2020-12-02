@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:id="@+id/widget27"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<LGLinearLayout
+    android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:background="#FFFFFF">
+<LGView
+android:id="@+id/widget29"
+android:layout_width="fill_parent"
+android:layout_height="0dp"
+android:text="Layout XML:"
+android:layout_weight="0.3"
+android:background="#FF0000">
+</LGView>
+<LGView
+android:id="@+id/text"
+android:layout_width="fill_parent"
+android:layout_height="0dp"
+android:layout_weight="0.3"
+android:background="#00FF00">
+</LGView>
+<LGView
+android:id="@+id/layout"
+android:layout_width="fill_parent"
+android:layout_height="0dp"
+android:layout_weight="0.4"
+android:text="Preview Layout"
+android:background="#0000FF"
+>
+</LGView>
+</LGLinearLayout>
+</LinearLayout>

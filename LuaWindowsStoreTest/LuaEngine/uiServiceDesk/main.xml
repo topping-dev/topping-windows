@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/mainrootlayout" xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:lua="http://schemas.android.com/apk/res/com.Resto"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#7993AB">
+
+<LGTextView
+        android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+        android:text="Merkut:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LGTextView
+        android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+        android:text="Title:"
+        android:layout_weight="0.65"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="2dip"/>
+    <LGEditText
+    lua:id="ETTitle"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="0.35"
+    android:layout_marginBottom="2dip"
+    android:layout_marginRight="2dip"
+    >
+    </LGEditText>
+</LinearLayout> 
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LGTextView
+        android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+        android:text="Description:"
+        android:layout_weight="0.65"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginLeft="2dip"/>
+    <LGEditText
+        lua:id="ETDescription"
+        android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.35"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginRight="2dip">
+    </LGEditText>
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LGTextView
+        android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+        android:text="Reporter:"
+        android:layout_weight="0.65"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginLeft="2dip"/>
+    <LGComboBox
+        lua:id="CBReporter"
+        android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="0.35"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginRight="2dip"
+    	android:maxLines="1"
+	android:singleLine="true">
+    </LGComboBox>
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LGTextView
+        android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+        android:text="Affected User:"
+        android:layout_weight="0.65"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginLeft="2dip"/>
+    <LGComboBox
+        lua:id="CBAffectedUser"
+        android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="0.35"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginRight="2dip">
+    </LGComboBox>
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LGTextView
+        android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+        android:text="Priority:"
+        android:layout_weight="0.65"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginLeft="2dip"/>
+    <LGComboBox
+        lua:id="CBPriority"
+        android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="0.35"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginRight="2dip">
+    </LGComboBox>
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LGTextView
+        android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+        android:text="Severity:"
+        android:layout_weight="0.65"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginLeft="2dip"/>
+    <LGComboBox
+        lua:id="CBSeverity"
+        android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="0.35"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginRight="2dip">
+    </LGComboBox>
+</LinearLayout>
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LGTextView
+        android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+        android:text="Impact:"
+        android:layout_weight="0.65"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginLeft="2dip"/>
+    <LGComboBox
+        lua:id="CBImpact"
+        android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="0.35"
+    	android:layout_marginBottom="2dip"
+    	android:layout_marginRight="2dip">
+    </LGComboBox>
+</LinearLayout>
+<!-- LGButton 
+android:id="@+id/butAdd"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+lua:id="ButSave"
+android:text="Save"
+android:layout_marginBottom="2dip"
+android:layout_marginRight="2dip"
+android:layout_marginLeft="2dip"/-->
+<!-- LGListView 
+android:id="@+id/listView"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+lua:id="ListViewTest"
+android:layout_weight="0.1">
+</LGListView>
+<LinearLayout 
+android:id="@+id/layoutButtons"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+android:tag="buttonmenu"
+android:layout_weight="0.9">
+<LGButton 
+android:id="@+id/butAdd"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ekle"/>
+</LinearLayout-->
+
+</LinearLayout>

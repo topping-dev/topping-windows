@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartArguments>"C:\Users\Ed\Desktop\Projects\LuaWindowsPhone\LuaWindowsPhone\LuaEngine\\" "scripts"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Windows|x86'">
+    <StartArguments>"C:\Users\Edo\Desktop\MobileFucker\WorkSpace\WP7\LuaWindowsPhone\LuaWindowsPhone\LuaEngine\\" "scripts"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug WP8|x86'">
+    <StartArguments>"C:\Users\Edo\Desktop\MobileFucker\WorkSpace\WP7\LuaWindowsPhone\LuaWindowsPhone\LuaEngine\\" "scripts"</StartArguments>
+  </PropertyGroup>
+</Project>
